@@ -1,0 +1,26 @@
+# ── Secretos / configuración ──────────────────────────────
+# config.php contiene la sal (y en producción, credenciales).
+# Se versiona SOLO la plantilla config.example.php.
+config.php
+
+# ── Datos de usuarios ─────────────────────────────────────
+# Las pizzas enviadas contienen datos personales (teléfono,
+# Instagram, autor). No deben versionarse.
+data/pizzas/*.json
+data/pizzas/*.json.lk
+# Se conserva la carpeta vacía:
+!data/pizzas/.gitkeep
+
+# Exports de clientes (CSV del panel admin)
+*.csv
+clientes*.csv
+export*.csv
+
+# ── Sistema / editores ────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+*.log
